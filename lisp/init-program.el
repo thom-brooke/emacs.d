@@ -11,10 +11,18 @@
 (use-package rainbow-delimiters
   :hook (prog-mode . rainbow-delimiters-mode))
 
+(use-package filladapt)
 
 ;; lsp-mode
 
-;; flycheck
+;; UNTESTED:
+(use-package flycheck
+  :init (global-flycheck-mode))
+;;
+;; For OSX:
+;; (use-package exec-path-from-shell)
+;; (exec-path-from-shell-initialize)
+
 
 ;; etc.
 

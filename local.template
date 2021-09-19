@@ -38,3 +38,5 @@
 ;; Disable packages, as required.
 ;; Note that if these flags are NOT defined (or not 't'), the package WILL be loaded.
 ;; (defconst tcb-no-tex-p nil)
+;; (defconst tcb-no-cpp-p nil)
+;; (defconst tcb-c-default "TCB-CC") ; c/c++ style
