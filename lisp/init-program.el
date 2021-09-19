@@ -1,4 +1,8 @@
-%%  General Programming
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;;  General Programming
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
 (show-paren-mode 1)

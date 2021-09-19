@@ -12,4 +12,6 @@
 
 # local config and intermediate:
 local.el
+.last-package-update-day
+elpa
 
