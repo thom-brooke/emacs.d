@@ -9,3 +9,7 @@
 
 # Undo-tree save-files
 *.~undo-tree
+
+# local config and intermediate:
+local.el
+

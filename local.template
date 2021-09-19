@@ -1,0 +1,37 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;; Local system overrides
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; All the configurable knobs and buttons (with their default values).
+;; Uncomment and adjust, as desired.
+
+;; (defconst tcb-theme-name 'wombat)	
+
+;; Note that NO default font is defined; config uses the emacs default.
+;; Define one here, if you like.  A reasonable font string is provided.
+;; (defconst tcb-default-font "Fira Mono 9")
+
+;; The "border" values are extra nudge, added to the initial frame.
+;; This is mainly to overcome OS idiosyncracies.
+;; (defconst tcb-border-top 0)
+;; (defconst tcb-border-left 0))
+;; (defconst tcb-border-bottom 0))
+;; (defconst tcb-border-right 0))
+
+;; By default, the initial frame takes up the full workspace height.
+;; If you want it a little lower, adjust this:
+;; (defconst tcb-initial-top tcb-border-top))
+
+;; Initial frame width (in characters):
+;; (defconst tcb-initial-width 120))
+
+;; Geometry for the "default" frame (i.e., any new frames).
+;; If unspecified, these will use the emacs defaults (not '0', as shown)
+;; (defconst tcb-default-top 0)
+;; (defconst tcb-default-left 0)
+;; (defconst tcb-default-width 0)
+;; (defconst tcb-default-height 0)
+
+
