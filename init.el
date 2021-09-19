@@ -123,7 +123,7 @@
 
 ;; XML (?)
 
-;; auctex
+(require 'init-tex)
 
 ;; python
 
