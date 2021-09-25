@@ -127,6 +127,8 @@
 
 ;; XML (?)
 
+(require 'init-yaml)
+
 (require 'init-tex)
 
 ;; python

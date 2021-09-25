@@ -7,7 +7,15 @@
 ;; All the configurable knobs and buttons (with their default values).
 ;; Uncomment and adjust, as desired.
 
+;; For OSX:
+;; (use-package exec-path-from-shell)
+;; (exec-path-from-shell-initialize)
+
 ;; (defconst tcb-theme-name 'wombat)	
+
+;; Depending on the theme, you may need to adjust some faces:
+;; (defconst tcb-hif-column "#505050")
+;; (defconst tcb-hif-current "#707070")
 
 ;; Note that NO default font is defined; config uses the emacs default.
 ;; Define one here, if you like.  A reasonable font string is provided.
@@ -39,4 +47,6 @@
 ;; Note that if these flags are NOT defined (or not 't'), the package WILL be loaded.
 ;; (defconst tcb-no-tex-p nil)
 ;; (defconst tcb-no-cpp-p nil)
+;; (defconst tcb-no-yaml-p nil)
+
 ;; (defconst tcb-c-default "TCB-CC") ; c/c++ style
