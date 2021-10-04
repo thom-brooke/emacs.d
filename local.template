@@ -50,3 +50,4 @@
 ;; (defconst tcb-no-yaml-p nil)
 
 ;; (defconst tcb-c-default "TCB-CC") ; c/c++ style
+;; (defconst tcb-fill-column 120) ; auto-fill column for fill adapt (c/c++)

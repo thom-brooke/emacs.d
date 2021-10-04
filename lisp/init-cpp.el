@@ -1,8 +1,18 @@
+;;; init-cpp --- Settings for cc-mode
+
+;;; Commentary
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
-;;  C/C++ 
+;; C/C++
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;; Code:
+
+(if (not (boundp 'tcb-fill-column))
+    (defconst tcb-fill-column 120))
+
 
 (if (not (and (boundp 'tcb-no-cpp-p) tcb-no-cpp-p))
     (progn
@@ -13,7 +23,7 @@
 
       ;; personal C++ style
 
-      (c-add-style "TCB-CC" 
+      (c-add-style "TCB-CC"
 		   '("stroustrup"
 		     (c-tab-always-indent . t)
 		     (c-basic-offset . 4)	; Guessed value
@@ -218,11 +228,12 @@
 					;  (c-set-offset 'arglist-close 0)
 					;  (c-set-offset 'inextern-lang 0)
 	(setq delete-key-deletes-forward t)
-	(setq tab-width 4 
+	(setq tab-width 4
 	      indent-tabs-mode nil)
 	(auto-fill-mode)
-	;;  (c-setup-filladapt) ; will this work without filladapt?
-	;;  (filladapt-mode 1)  ; ditto?
+	(setq fill-column tcb-fill-column)
+	(c-setup-filladapt)
+	(filladapt-mode 1)
 	(c-toggle-auto-hungry-state 1)
 	)
       
@@ -235,3 +246,4 @@
   )
 
 (provide 'init-cpp)
+;;; init-cpp.el ends here
