@@ -48,6 +48,8 @@
 ;; (defconst tcb-no-tex-p nil)
 ;; (defconst tcb-no-cpp-p nil)
 ;; (defconst tcb-no-yaml-p nil)
+;; (defconst tcb-no-markdown-p nil)
 
 ;; (defconst tcb-c-default "TCB-CC") ; c/c++ style
 ;; (defconst tcb-fill-column 120) ; auto-fill column for fill adapt (c/c++)
+;; (defconst tcb-markdown-command nil) ; markdown *rendering* command

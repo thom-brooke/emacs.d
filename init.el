@@ -129,6 +129,8 @@
 
 (require 'init-yaml)
 
+(require 'init-markdown)
+
 (require 'init-tex)
 
 ;; python
