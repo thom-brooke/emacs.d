@@ -1,16 +1,22 @@
+;;; init-tex.el --- Support for TeX, LaTeX, BibTeX, etc.
+
+;;; Commentary:
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;; TeX and LaTeX
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;;; Code:
 
 ;; Note:  this is based on the "old stuff"
 
 ;; If not disabled:
 (if (not (and (boundp 'tcb-no-tex-p) tcb-no-tex-p))
     (progn
-      ;; already loaded? (use-package auctex)
+      (use-package tex
+	:ensure auctex)
       (require 'reftex)
       (message "loading TeX stuff")
       (setq LaTeX-verbatim-environments-local '("Verbatim" "lstlisting"))
@@ -39,3 +45,4 @@
   )
 
 (provide 'init-tex)
+;;; init-tex.el ends here
