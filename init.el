@@ -123,7 +123,7 @@
 
 (require 'init-cpp)
 
-(require 'init=doxymacs)
+(require 'init-doxymacs)
 
 ;; XML (?)
 
