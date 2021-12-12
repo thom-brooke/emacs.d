@@ -12,6 +12,13 @@
 ;; Overall theme (tailor faces later?):
 (load-theme tcb-theme-name t)
 
+(setq blink-cursor-blinks 0) ; don't stop blinking
+
+(set-face-attribute 'cursor nil :background "palegoldenrod")
+(set-face-attribute 'lazy-highlight nil :foreground "black" :background "SteelBlue")
+(set-face-attribute 'isearch nil :foreground "black" :background "yellow")
+
+
 ;; Default font for all frames (only if set)
 ;; See https://www.gnu.org/software/emacs/manual/html_node/emacs/Fonts.html
 ;; for how to specify the font name.
