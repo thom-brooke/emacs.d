@@ -33,10 +33,14 @@
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; There is some report that this is needed to fix some TLS/cert errors.
+;; so far, it doesn't seem needed (for me); recorded here for future reference:
+					; (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
+
 (require 'package)
-(setq package-archives '(("org"       . "http://orgmode.org/elpa/")
+(setq package-archives '(("org"       . "https://orgmode.org/elpa/")
                          ("gnu"       . "http://elpa.gnu.org/packages/")
-                         ("melpa"     . "http://melpa.org/packages/")))
+                         ("melpa"     . "https://melpa.org/packages/")))
 
 (package-initialize)
 (unless package-archive-contents
