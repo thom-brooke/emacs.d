@@ -104,7 +104,7 @@
 
 ;; auto-wrap for text modes:
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
-(setq default-fill-column 100)
+(setq-default fill-column 100)
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
