@@ -108,7 +108,7 @@
 
 ;; auto-wrap for text modes:
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
-(setq default-fill-column 100)
+(setq-default fill-column 100)
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -159,8 +159,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   (quote
-    (filladapt rainbow-delimiters diminish auto-package-update use-package))))
+   '(gnu-elpa-keyring-update filladapt rainbow-delimiters diminish auto-package-update use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
