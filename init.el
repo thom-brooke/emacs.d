@@ -33,6 +33,10 @@
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+;; There is some report that this is needed to fix some TLS/cert errors.
+;; so far, it doesn't seem needed (for me); recorded here for future reference:
+					; (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
+
 (require 'package)
 (setq package-archives '(("org"       . "http://orgmode.org/elpa/")
                          ("gnu"       . "http://elpa.gnu.org/packages/")
@@ -155,8 +159,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   (quote
-    (filladapt rainbow-delimiters diminish auto-package-update use-package))))
+   '(gnu-elpa-keyring-update filladapt rainbow-delimiters diminish auto-package-update use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
